@@ -1,16 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
+int main ()
+{
+    int n,m,maxn,T,i;
+    printf("Enter the number of test cases :");
+    test :
+    scanf("%d",&T);
 
-int main(){
+    if (T<100 && T>0) 
+    {
 
-   
-   printf("Hello Guys!");
-
-
-   return 0; 
+    for (i=0;i<T;i++)
+    {
+        scanf("%d",&n);
+        scanf("%d",&m);
+        maxn = n*5 + m*7;
+        printf("Maximum is : %d \n",maxn);
+    }
+    }
+    else {
+        printf("Please enter a valide number of test cases :");
+        goto test ;
+    }
+    return 0;
 }
